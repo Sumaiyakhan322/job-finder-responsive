@@ -49,17 +49,17 @@ const Body = () => {
           <h1 className="text-2xl md:text-4xl font-extrabold  text-white">
             All Available Jobs
           </h1>
-          <div className="md:flex  md:gap-2 space-y-6 md:space-y-0 items-center">
-            <div>
+          <div className="md:flex  md:gap-2 space-y-6 md:space-y-0 items-center ">
+            <div className="md:w-1/2 w-full ">
               <Search></Search>
             </div>
-            <div>
+            <div className="md:w-1/2 w-full ">
               <Sort></Sort>
             </div>
           </div>
         </div>
       </div>
-      <div>{content}</div>
+      <div >{content}</div>
     </div>
   )
 }

@@ -35,20 +35,21 @@ const JobCard = ({ job }) => {
 
   return (
     <div>
-      <div className="flex md:flex-row flex-col justify-between items-center py-4">
+      <div className="flex md:flex-row flex-col md:justify-between md:items-center py-4 border border-black rounded-md md:border-none my-10 drop-shadow-lg md:my-0 shadow-lg shadow-cyan-500/50 md:shadow-none">
         <div>
-          <h1 className="text-lg font-bold"><span className="">{title}</span></h1>
+          <h1 className="text-lg font-bold">{title}</h1>
           <div className="flex-col flex md:flex-row gap-4 text-xs md:text-base my-5 md:my-0">
             <span>{typeOfJob}</span>
-            <span><span className="">BDT</span> {salary}</span>
+            <span>BDT {salary}</span>
             <span>Closing on {deadline}</span>
           </div>
         </div>
 
         <div className="flex gap-4 cursor-pointer">
           <span className="flex items-center bg-[#3B82F6] hover:bg-[#3b60a1] p-1 px-3 font-semibold rounded">
-            <FaEdit />
+          
             <Link to={`/editJob/${id}`}>
+            <FaEdit />
               <span className="md:block hidden">Edit</span>
             </Link>
           </span>

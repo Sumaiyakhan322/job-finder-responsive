@@ -36,7 +36,7 @@ const Sidebar = () => {
           </div>
         </Link>
         <div className=" pl-5 gap-2 mt-2 text-gray-400 ">
-          <div onClick={handleInternship} className="">
+          <div onClick={handleInternship} >
             <Internship></Internship>
           </div>
           <div onClick={handleFulltime}>
@@ -52,10 +52,10 @@ const Sidebar = () => {
 
       </div>
       <div className="flex items-center md:mt-2 gap-2 text-gray-400 hover:text-white cursor-pointer text-sm md:text-xl">
-        <span className="">
+        <span >
           <BsClipboardPlus />
         </span>
-        <Link to={"/addJob"} className="">
+        <Link to={"/addJob"} >
           <h1>Add New Job</h1>
         </Link>
         
