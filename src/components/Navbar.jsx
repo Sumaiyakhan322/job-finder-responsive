@@ -22,9 +22,9 @@ const Navbar = () => {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-[#334155] rounded-md ">
-        <li className="btn btn-primary text-xs mb-2 p-0 btn-sm"><a>Login</a></li>
+        <li className="btn btn-primary btn-sm mb-2 p-0 "><a>Login</a></li>
         
-        <li className="btn btn-secondary p-0 text-xs btn-outline  btn-sm"><a >SignIn</a></li>
+        <li className="btn btn-secondary p-0 btn-sm btn-outline"><a >SignIn</a></li>
       </ul>
     </div>
       </div>
