@@ -10,7 +10,7 @@ const Navbar = () => {
           </span>
         </div>
       </Link>
-      <div className="flex  gap-2  navbar-end">
+      <div className="flex  gap-2  navbar-end"  >
         <span className="lg:block hidden">
           <div className="btn btn-primary btn-md">Login</div>
         </span>

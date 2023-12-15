@@ -5,6 +5,8 @@ import JobCard from "./JobCard"
 import { useEffect } from "react"
 import { asyncGetAllJob } from "../features/allJobs/allJobSlice"
 import searchJobsByTitle from "../util/searchJob"
+import Aos from "aos"
+import "aos/dist/aos.css";
 
 const Body = () => {
   const dispatch = useDispatch()
@@ -17,7 +19,12 @@ const Body = () => {
   useEffect(() => {
     dispatch(asyncGetAllJob())
   }, [dispatch,deletedJob])
-
+  useEffect(() => {
+    Aos.init({
+      duration: 2000, // Animation duration in milliseconds
+      once: true, // Only animate once
+    });
+  }, []);
  
   let content
   if (isLoading) {
@@ -50,10 +57,10 @@ const Body = () => {
             All Available Jobs
           </h1>
           <div className="md:flex  md:gap-2 space-y-6 md:space-y-0 items-center ">
-            <div className="md:w-1/2 w-full ">
+            <div className="md:w-1/2 w-full "data-aos="fade-up">
               <Search></Search>
             </div>
-            <div className="md:w-1/2 w-full ">
+            <div className="md:w-1/2 w-full " data-aos="fade-up">
               <Sort></Sort>
             </div>
           </div>

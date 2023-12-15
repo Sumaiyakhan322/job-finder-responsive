@@ -99,7 +99,7 @@ const AddJob = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary mt-2 md:w-2/12  w-5/12 mx-auto mb-10" >
+        <button type="submit" className="btn btn-primary mt-2 md:w-2/12  w-5/12 mx-auto mb-10"  data-aos="fade-up">
           Add Job
         </button>
       </form>
