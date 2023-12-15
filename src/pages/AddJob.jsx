@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { asyncAddJob } from "../features/addJob/addJobSlice"
+import { Helmet } from "react-helmet-async"
 
 const AddJob = () => {
   const dispatch = useDispatch()
@@ -27,6 +28,9 @@ const AddJob = () => {
 
   return (
     <div className=" mx-auto mt-8">
+                      <Helmet>
+        <title>Jobs |Add</title>
+      </Helmet>
       <h1 className="text-center font-extrabold md:text-4xl text-white my-10 text-2xl">
         Add New Job
       </h1>

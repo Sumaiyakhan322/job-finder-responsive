@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { asyncGetSingleJob } from "../features/singleJob/singleJobSlice";
 import { asyncEditJob } from "../features/editJob/editJobSlice";
+import { Helmet } from "react-helmet-async";
 
 const EditJob = () => {
   const dispatch = useDispatch();
@@ -59,6 +60,10 @@ const EditJob = () => {
 
   return (
     <div className=" mx-auto mt-8">
+                   <Helmet>
+        <title>Jobs | Update</title>
+      </Helmet>
+   
     <h1 className="text-center font-extrabold md:text-4xl text-white my-10 text-2xl">
       Update Your Job
     </h1>
